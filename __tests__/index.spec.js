@@ -24,7 +24,7 @@ pactWith(
             status: 200,
             body: {
               status: 'ok',
-              data: 'something useful'
+              data: 'something useful here'
             },
           },
         })
