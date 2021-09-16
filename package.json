@@ -6,7 +6,7 @@
   "scripts": {
     "app": "node index.js",
     "test": "jest -i",
-    "pact:publish": "pact-broker publish pact/pacts --consumer-app-version=\"$(npx @pact-foundation/absolute-version)\" --tag-with-git-branch --broker-base-url=$PACT_BROKER_URL"
+    "pact:publish": "pact-broker publish pact/pacts --consumer-app-version=$ghprbActualCommit --tag-with-git-branch --broker-base-url=$PACT_BROKER_URL"
   },
   "repository": {
     "type": "git",
