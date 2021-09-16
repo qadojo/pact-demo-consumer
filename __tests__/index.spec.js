@@ -1,8 +1,6 @@
 const { pactWith } = require('jest-pact')
 const axios = require('axios')
 
-
-
 pactWith(
   { consumer: 'pact-demo-consumer', provider: 'pact-demo-provider' },
   (provider) => {
